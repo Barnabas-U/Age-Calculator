@@ -1,0 +1,553 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 94%);
+    margin: 0;
+    margin-top: 3em;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    width: 50%;
+    margin-top: 5%;
+    margin: auto;
+    border-radius: 1em 1em 9em 1em;
+    padding: 2em;
+}
+
+/* date  of birth input area */
+.date-input {
+    padding: 0em;
+    width: 25em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#dateinput {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.5em;
+    font-size: 0.7em;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    color: hsl(0, 1%, 44%);
+}
+
+input {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size:x-large;
+    width: 3.8em;
+    height: 2em;
+    padding-left: 0.7em;
+    border: 1px solid hsl(0, 0%, 86%);
+    border-radius: 0.3em;
+}
+
+::placeholder {
+    color: hsl(0, 1%, 44%);
+}
+
+input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+input {
+    cursor: pointer;
+}
+
+input:hover {
+    border-color: hsl(259, 100%, 65%);
+}
+
+input:focus {
+    outline: none;
+}
+
+.warning {
+    margin: 0;
+    height: 1em;
+    font-size: 0.7em;
+    font-style: italic;
+    color: hsl(0, 100%, 67%);
+}
+
+      /* calculation button area */
+.activation-button {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-bottom: 0;
+}
+.line1 {
+    margin-top: 2em;
+    width:27em;
+    background-color: hsl(0, 0%, 94%);
+    height: 0.1em;
+}
+
+.line2 {
+    display: none;
+}
+
+img {
+    background-color: hsl(259, 100%, 65%);
+    width: 2.5em;
+    padding: 1em;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: -0.5em;
+}
+
+img:hover {
+    background-color: hsl(0, 0%, 8%);
+}
+
+/*  output area */
+.output {
+    margin-bottom: -0.3em;
+    margin-top: -0.3em;
+    font-style: italic;
+    font-weight: 900;
+    font-size:5em;
+    color: hsl(0, 0%, 8%);
+}
+
+output {
+    letter-spacing: 0.2em;
+    color: hsl(259, 100%, 65%);
+}
+
+.age-output {
+    margin-bottom: 1em;
+}
+
+@media only screen and (max-device-width: 450px) {
+    body {
+        margin-top: 0em;
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .container {
+        width: 90%;
+        margin: auto;
+        margin-top: 25%;
+        border-radius: 1em 1em 9em 1em;
+        padding: 1em;
+        margin-bottom: 10%;
+    }
+    
+    /* date  of birth input area */
+    .date-input {
+        padding: 0em;
+        width: 100%;
+        margin-bottom: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    label {
+        margin-bottom: 0.3em;
+        font-size: 0.7em;
+        font-weight: bolder;
+    }
+    
+    input {
+        font-weight: 700;
+        font-size:large;
+        width: 5em;
+        height: 2.5em;
+        border-radius: 0.3em;
+    }
+    
+    .warning1, .warning2, .warning3 {
+        margin: 0;
+        height: 1em;
+        font-size: 0.6em;
+        font-style: italic;
+        color: hsl(0, 100%, 67%);
+    }
+    
+          /* calculation button area */
+    .activation-button {
+        width: 100%;
+        display: flex;
+        margin-bottom: 0;
+    }
+    .line1, .line2 {
+        display: block;
+        margin-top: 2em;
+        width:100%;
+        background-color: hsl(0, 0%, 94%);
+        height: 0.2em;
+    }
+    
+    img {
+        width: 5em;
+        margin-bottom: 2em;
+    }
+    
+    /*  output area */
+    .output {
+        margin-bottom: -0.3em;
+        font-size:3em;
+    }
+    
+    output {
+        letter-spacing: 0.2em;
+        color: hsl(259, 100%, 65%);
+    }
+    
+    .age-output {
+        margin-bottom: 1em;
+    }
+}
+
+@media only screen and (min-device-width: 1250px) and (max-device-width: 1460px) {
+    .container {
+        background-color: hsl(0, 0%, 100%);
+        width: 50%;
+        margin: auto;
+        border-radius: 1em 1em 9em 1em;
+        padding: 2em;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    /* date  of birth input area */
+.date-input {
+    padding: 0em;
+    width: 25em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#dateinput {
+    margin-right: 2.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.5em;
+    font-size: 0.7em;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    color: hsl(0, 1%, 44%);
+}
+
+input {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size:x-large;
+    width: 5em;
+    height: 2em;
+    padding-left: 0.7em;
+    border: 1px solid hsl(0, 0%, 86%);
+    border-radius: 0.3em;
+}
+
+::placeholder {
+    color: hsl(0, 1%, 44%);
+}
+
+input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+input {
+    cursor: pointer;
+}
+
+input:hover {
+    border-color: hsl(259, 100%, 65%);
+}
+
+input:focus {
+    outline: none;
+}
+
+.warning1, .warning2, .warning3 {
+    margin: 0;
+    height: 1em;
+    font-size: 0.6em;
+    font-style: italic;
+    color: hsl(0, 100%, 67%);
+}
+
+      /* calculation button area */
+.activation-button {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-bottom: 0;
+}
+.line1 {
+    margin-top: 2em;
+    width:30em;
+    background-color: hsl(0, 0%, 94%);
+    height: 0.1em;
+}
+
+.line2 {
+    display: none;
+}
+
+img {
+    background-color: hsl(259, 100%, 65%);
+    width: 5em;
+    padding: 1em;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: -0.5em;
+}
+
+img:hover {
+    background-color: hsl(0, 0%, 8%);
+}
+
+/*  output area */
+.output {
+    margin-bottom: -0.3em;
+    margin-top: -0.3em;
+    font-style: italic;
+    font-weight: 900;
+    font-size:5em;
+    color: hsl(0, 0%, 8%);
+}
+
+output {
+    letter-spacing: 0.2em;
+    color: hsl(259, 100%, 65%);
+}
+
+.age-output {
+    margin-bottom: 1em;
+}
+
+}
+
+@media only screen and (min-device-width: 950px) and (max-device-width: 1249px) {
+    .container {
+        background-color: hsl(0, 0%, 100%);
+        width: 50%;
+        margin: auto;
+        border-radius: 1em 1em 9em 1em;
+        padding: 2em;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    /* date  of birth input area */
+.date-input {
+    padding: 0em;
+    width: 25em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#dateinput {
+    margin-right: 2.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+
+input {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size:x-large;
+    width: 4em;
+    height: 2em;
+    padding-left: 0.7em;
+    border: 1px solid hsl(0, 0%, 86%);
+    border-radius: 0.3em;
+}
+
+.warning1, .warning2, .warning3 {
+    margin: 0;
+    height: 1em;
+    font-size: 0.6em;
+    font-style: italic;
+    color: hsl(0, 100%, 67%);
+}
+
+      /* calculation button area */
+.activation-button {
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-bottom: 0;
+}
+.line1 {
+    margin-top: 2em;
+    width:23em;
+    background-color: hsl(0, 0%, 94%);
+    height: 0.1em;
+}
+
+
+img {
+    background-color: hsl(259, 100%, 65%);
+    width: 5em;
+    padding: 1em;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: -0.5em;
+}
+
+/*  output area */
+.output {
+    margin-bottom: -0.3em;
+    margin-top: -0.3em;
+    font-style: italic;
+    font-weight: 900;
+    font-size:4em;
+    color: hsl(0, 0%, 8%);
+}
+}
+
+@media only screen   
+and (orientation : portrait)   
+and (-webkit-min-device-pixel-ratio: 1)   
+and (min-device-width : 768px)   
+and (max-device-width : 1007px) {
+    .container {
+        background-color: hsl(0, 0%, 100%);
+        width: 70%;
+        margin: auto;
+        border-radius: 1em 1em 9em 1em;
+        padding: 2em;
+        margin-top: 25%;
+        margin-bottom: 5%;
+    }
+
+    /* date  of birth input area */
+.date-input {
+    padding: 0em;
+    width: 25em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#dateinput {
+    margin-right: 2.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.5em;
+    font-size: 0.7em;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    color: hsl(0, 1%, 44%);
+}
+
+input {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size:x-large;
+    width: 5em;
+    height: 2em;
+    padding-left: 0.7em;
+    border: 1px solid hsl(0, 0%, 86%);
+    border-radius: 0.3em;
+}
+
+::placeholder {
+    color: hsl(0, 1%, 44%);
+}
+
+input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+input {
+    cursor: pointer;
+}
+
+input:hover {
+    border-color: hsl(259, 100%, 65%);
+}
+
+input:focus {
+    outline: none;
+}
+
+.warning1, .warning2, .warning3 {
+    margin: 0;
+    height: 1em;
+    font-size: 0.6em;
+    font-style: italic;
+    color: hsl(0, 100%, 67%);
+}
+
+      /* calculation button area */
+.activation-button {
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-bottom: 0;
+}
+.line1 {
+    margin-top: 2em;
+    width:25em;
+    background-color: hsl(0, 0%, 94%);
+    height: 0.1em;
+}
+
+.line2 {
+    display: none;
+}
+
+img {
+    background-color: hsl(259, 100%, 65%);
+    width: 5em;
+    padding: 1em;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: -0.5em;
+}
+
+img:hover {
+    background-color: hsl(0, 0%, 8%);
+}
+
+/*  output area */
+.output {
+    margin-bottom: -0.3em;
+    margin-top: -0.3em;
+    font-style: italic;
+    font-weight: 900;
+    font-size:5em;
+    color: hsl(0, 0%, 8%);
+}
+
+output {
+    letter-spacing: 0.2em;
+    color: hsl(259, 100%, 65%);
+}
+
+.age-output {
+    margin-bottom: 1em;
+}
+
+}

@@ -37,8 +37,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github linl](https://github.com/Barnabas-U/Age-Calculator)
+- Live Site URL: [netlify live app](https://startling-liger-af8715.netlify.app/)
 
 ## My process
 
